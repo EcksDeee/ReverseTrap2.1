@@ -28,6 +28,3 @@ client.on('message', msg => {
 });
 
 client.login(config.token);
-
-        } else if (command === 'panda') {
-            msg.channel.send('best teacher');
