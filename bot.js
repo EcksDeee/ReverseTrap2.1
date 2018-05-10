@@ -26,3 +26,5 @@ client.on('message', msg => {
         return;
     }
 });
+
+client.login(config.token);
