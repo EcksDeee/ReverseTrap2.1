@@ -31,6 +31,12 @@ client.on('message', msg => {
             msg.channel.send("", {file: "https://i.gifer.com/U3Wn.gif"});
         } else if (command === 'gifhelp') {
             msg.channel.send(":>noscope: Noscopes kids\n:>stickman: Stick people beat each other up\n:>rekt: Use ONLY when someone gets toasted\n:>ganked: Partying gets you beat up")
+        } else if (command === 'setactivity') {
+ 			            if (msg.author.id === '314629969940840448') {
+ 				                  if (typeof args[0] === 'undefined') {
+ 					                        if (typeof args[1] === 'undefined') {
+ 						                              msg.channel.send("You need to specify an activity! ^setactivity <P/L/W> <activity>").then(msg => {msg.delete(5000)});
+ 					                        }
         } else {
             return;
         }
