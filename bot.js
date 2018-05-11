@@ -31,14 +31,42 @@ client.on('message', msg => {
             msg.channel.send("", {file: "https://i.gifer.com/U3Wn.gif"});
         } else if (command === 'gifhelp') {
             msg.channel.send(":>noscope: Noscopes kids\n:>stickman: Stick people beat each other up\n:>rekt: Use ONLY when someone gets toasted\n:>ganked: Partying gets you beat up")
-        } else if (command === 'status') {
- 		          	if (botstatus === true) {
- 				                msg.channel.send('ReverseTrap is currently: **ENABLED**');
- 			          } else if (botstatus === false) {
- 				                msg.channel.send('ReverseTrap is currently: **DISABLED**');
- 			          } else {
- 				                return;
- 		  	        }
+        
+     if (pref === config.prefix) {
+ 		         if (command === 'enable') {
+ 			               if (msg.member.permissions.has('ADMINISTRATOR')) {
+ 				                     if (botstatus === false) {
+ 					                           botstatus = true;
+ 					                           msg.channel.send(':white_check_mark: Pundora is now **ENABLED** :white_check_mark:');
+ 				                     } else if (botstatus === true) {
+ 					                           msg.channel.send(':white_check_mark: Pundora is already **ENABLED** :white_check_mark:');
+ 				                     } else {
+ 					                           return;
+ 				                     }
+ 			               } else {
+ 				                     msg.channel.send(nopermserror);
+ 			               }
+ 		         } else if (command === 'disable') {
+ 			               if (msg.member.permissions.has('ADMINISTRATOR')) {
+ 				                     if (botstatus === true) {
+ 					                           botstatus = false;
+ 					                           msg.channel.send(':x: Pundora is now **DISABLED** :x:');
+ 				                     } else if (botstatus === false) {
+ 					                           msg.channel.send(':x: Pundora is already **DISABLED** :x:');
+ 				                     } else {
+ 					                           return;
+ 				                     }
+ 			               } else {
+ 				                     msg.channel.send(nopermserror);
+ 			               }
+             } else if (command === 'status') {
+ 		          	     if (botstatus === true) {
+ 				                     msg.channel.send('ReverseTrap is currently: **ENABLED**');
+ 			                } else if (botstatus === false) {
+ 				                      msg.channel.send('ReverseTrap is currently: **DISABLED**');
+ 			                } else {
+ 				                      return;
+ 		  	              }
         } else {
             return;
         }
