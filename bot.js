@@ -19,8 +19,10 @@ client.on('message', msg => {
 
         if (command === 'ping') {
             msg.channel.send("Pong!");
+        } else if (command === 'noscope') {
+            msg.channel.send("", {file: "https://media2.giphy.com/media/UJLtz0z7VrAIM/200.gif"});
         } else {
-            return;
+             return;
         }
     } else {
         return;
@@ -28,10 +30,4 @@ client.on('message', msg => {
 });
 
 client.login(config.token);
-
-        } else if (command === 'noscope') {
-            msg.channel.send("https://media2.giphy.com/media/UJLtz0z7VrAIM/200.gif")
-        } else {
-             return;
-        }
   
