@@ -22,9 +22,11 @@ client.on('message', msg => {
         } else if (command === 'noscope') {
             msg.channel.send("", {file: "https://media2.giphy.com/media/UJLtz0z7VrAIM/200.gif"});
         } else if (command === 'help') {
-            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]\nBeta\n:>help: Lists possible commands\n:>ping: Says pong..What did u expect??\n:>noscope: Noscopes kids\n:>stickman: Stick man eats everyone")
+            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]\nBeta\n:>help: Lists possible commands\n:>ping: Says pong..What did u expect??\n:>noscope: Noscopes kids\n:>stickman: Stick man eats everyone\n:>rekt: Use ONLY when someone gets toasted")
         } else if (command === 'stickman') {
             msg.channel.send("", {file: "https://media0.giphy.com/media/jSXkVsYaQxw6k/200.gif"});
+        } else if (command === 'rekt') {
+            msg.channel.send("rekt m8", {file: "http://i.imgur.com/olx0xRF.gif"});
         } else {
              return;
         }
