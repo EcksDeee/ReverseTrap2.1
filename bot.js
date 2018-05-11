@@ -31,3 +31,13 @@ client.on('message', msg => {
 
 client.login(config.token);
   
+        } else if (command === 'help') {
+            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]"
+                             "Beta"
+                             "^help: Lists possible commands")
+        } else {
+             return;
+        }
+});
+                        
+        
