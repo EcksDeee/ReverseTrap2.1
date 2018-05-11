@@ -34,10 +34,10 @@ client.on('message', msg => {
 		}
 	}
         
-	if (pref === config.prefix) {
-		if (command === 'enable') {
-			if (botstatus === false) {
-				botstatus = true;
+    if (pref === config.prefix) {
+	 if (command === 'enable') {
+		if (botstatus === false) {
+			botstatus = true;
 				msg.channel.send(':white_check_mark: ReverseTrap is now **ENABLED**');
 			} else if (botstatus === true) {
 				msg.channel.send(':white_check_mark: ReverseTrap is already **ENABLED**');
