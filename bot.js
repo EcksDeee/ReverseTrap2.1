@@ -30,22 +30,5 @@ client.on('message', msg => {
         return;
     }
 });
-<<<<<<< HEAD
 
 client.login(config.token);
-=======
-  
-        } else if (command === 'help') {
-            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]"
-                             "Beta"
-                             "^help: Lists possible commands");
-        } else {
-             return;
-        }
-    } else {
-        return;
-    }
-});
-                        
-client.login(config.token);
->>>>>>> a9a3b64ad65545473f7b7fc127fbb487eca70e34
