@@ -29,10 +29,10 @@ client.on('message', msg => {
 
 client.login(config.token);
 
-      }else if (command === 'noscope') {
-        msg.channel.send("https://media2.giphy.com/media/UJLtz0z7VrAIM/200.gif")
-      
-      } else }
-        return;
-      }
+        } else if (command === 'hugkirbea') {
+            msg.channel.send("https://i.pinimg.com/originals/f2/80/5f/f2805f274471676c96aff2bc9fbedd70.gif")
+          
+        } else {
+             return;
+        }
   
