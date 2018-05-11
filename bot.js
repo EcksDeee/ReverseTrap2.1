@@ -28,8 +28,6 @@ client.on('message', msg => {
         return;
     }
 });
-
-client.login(config.token);
   
         } else if (command === 'help') {
             msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]"
@@ -43,4 +41,4 @@ client.login(config.token);
     }
 });
                         
-        
+client.login(config.token);
