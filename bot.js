@@ -29,9 +29,10 @@ client.on('message', msg => {
 
 client.login(config.token);
 
-    }else if (command === 'noscope')  {
+      }else if (command === 'noscope') {
         msg.channel.send("https://media2.giphy.com/media/UJLtz0z7VrAIM/200.gif")
-    } else }
+      
+      } else }
         return;
-    }
+      }
   
