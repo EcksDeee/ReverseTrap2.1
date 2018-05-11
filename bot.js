@@ -37,9 +37,9 @@ client.on('message', msg => {
  			               if (msg.member.permissions.has('ADMINISTRATOR')) {
  				                     if (botstatus === false) {
  					                           botstatus = true;
- 					                           msg.channel.send(':white_check_mark: Pundora is now **ENABLED** :white_check_mark:');
+ 					                           msg.channel.send(':white_check_mark: ReverseTrap is now **ENABLED**');
  				                     } else if (botstatus === true) {
- 					                           msg.channel.send(':white_check_mark: Pundora is already **ENABLED** :white_check_mark:');
+ 					                           msg.channel.send(':white_check_mark: ReverseTrap is already **ENABLED**');
  				                     } else {
  					                           return;
  				                     }
@@ -50,9 +50,9 @@ client.on('message', msg => {
  			               if (msg.member.permissions.has('ADMINISTRATOR')) {
  				                     if (botstatus === true) {
  					                           botstatus = false;
- 					                           msg.channel.send(':x: Pundora is now **DISABLED** :x:');
+ 					                           msg.channel.send(':x: ReverseTrap is now **DISABLED**');
  				                     } else if (botstatus === false) {
- 					                           msg.channel.send(':x: Pundora is already **DISABLED** :x:');
+ 					                           msg.channel.send(':x: ReverseTrap is already **DISABLED**');
  				                     } else {
  					                           return;
  				                     }
