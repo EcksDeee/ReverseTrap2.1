@@ -34,7 +34,6 @@ client.on('message', msg => {
         
      if (pref === config.prefix) {
  		     if (command === 'enable') {
- 			               if (msg.member.permissions.has('ADMINISTRATOR')) {
  				                     if (botstatus === false) {
  					                           botstatus = true;
  					                           msg.channel.send(':white_check_mark: ReverseTrap is now **ENABLED**');
@@ -47,7 +46,6 @@ client.on('message', msg => {
  				                     msg.channel.send(nopermserror);
  			               }
  		         } else if (command === 'disable') {
- 			               if (msg.member.permissions.has('ADMINISTRATOR')) {
  				                     if (botstatus === true) {
  					                           botstatus = false;
  					                           msg.channel.send(':x: ReverseTrap is now **DISABLED**');
