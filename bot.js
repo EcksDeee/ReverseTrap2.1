@@ -70,6 +70,6 @@ client.on('message', msg => {
                   } else {
                       return;
                   }
-});
+          });
 
 client.login(config.token);
