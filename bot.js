@@ -21,6 +21,8 @@ client.on('message', msg => {
             msg.channel.send("Pong!");
         } else if (command === 'noscope') {
             msg.channel.send("", {file: "https://media2.giphy.com/media/UJLtz0z7VrAIM/200.gif"});
+        } else if (command === 'help') {
+            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]\nBeta\n:>help: Lists possible commands")
         } else {
              return;
         }
@@ -30,14 +32,3 @@ client.on('message', msg => {
 });
 
 client.login(config.token);
-  
-        } else if (command === 'help') {
-            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]"
-                             "Beta"
-                             "^help: Lists possible commands")
-        } else {
-             return;
-        }
-});
-                        
-        
