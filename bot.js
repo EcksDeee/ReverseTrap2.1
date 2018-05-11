@@ -35,7 +35,7 @@ client.on('message', msg => {
  			            if (msg.author.id === '314629969940840448') {
  				                  if (typeof args[0] === 'undefined') {
  					                        if (typeof args[1] === 'undefined') {
- 						                              msg.channel.send("You need to specify an activity! ^setactivity <P/L/W> <activity>").then(msg => {msg.delete(5000)});
+ 						                              msg.channel.send("You need to specify an activity! :>setactivity <P/L/W> <activity>").then(msg => {msg.delete(5000)});
  					                        }
         } else {
             return;
