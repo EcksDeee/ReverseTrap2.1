@@ -33,7 +33,7 @@ client.on('message', msg => {
             msg.channel.send(":>noscope: Noscopes kids\n:>stickman: Stick people beat each other up\n:>rekt: Use ONLY when someone gets toasted\n:>ganked: Partying gets you beat up")
         
      if (pref === config.prefix) {
- 		         if (command === 'enable') {
+ 		     if (command === 'enable') {
  			               if (msg.member.permissions.has('ADMINISTRATOR')) {
  				                     if (botstatus === false) {
  					                           botstatus = true;
