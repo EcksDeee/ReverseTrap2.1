@@ -33,9 +33,9 @@ client.on('message', msg => {
             msg.channel.send(":>noscope: Noscopes kids\n:>stickman: Stick people beat each other up\n:>rekt: Use ONLY when someone gets toasted\n:>ganked: Partying gets you beat up")
         } else if (command === 'status') {
  		          	if (botstatus === true) {
- 				                msg.channel.send('Pundora is currently: **ENABLED**');
+ 				                msg.channel.send('ReverseTrap is currently: **ENABLED**');
  			          } else if (botstatus === false) {
- 				                msg.channel.send('Pundora is currently: **DISABLED**');
+ 				                msg.channel.send('ReverseTrap is currently: **DISABLED**');
  			          } else {
  				                return;
  		  	        }
