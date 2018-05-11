@@ -31,6 +31,14 @@ client.on('message', msg => {
             msg.channel.send("", {file: "https://i.gifer.com/U3Wn.gif"});
         } else if (command === 'gifhelp') {
             msg.channel.send(":>noscope: Noscopes kids\n:>stickman: Stick people beat each other up\n:>rekt: Use ONLY when someone gets toasted\n:>ganked: Partying gets you beat up")
+        } else if (command === 'status') {
+ 		          	if (botstatus === true) {
+ 				                msg.channel.send('Pundora is currently: **ENABLED**');
+ 			          } else if (botstatus === false) {
+ 				                msg.channel.send('Pundora is currently: **DISABLED**');
+ 			          } else {
+ 				                return;
+ 		  	        }
         } else {
             return;
         }
