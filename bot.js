@@ -28,7 +28,7 @@ client.on('message', msg => {
         } else if (command === 'rekt') {
             msg.channel.send("rekt m8", {file: "http://i.imgur.com/olx0xRF.gif"});
         } else {
-        msg.channel.send('This is not a command! ^help for details'); }
+            return;
         }
     } else {
         return;
