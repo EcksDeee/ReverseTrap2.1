@@ -38,6 +38,9 @@ client.login(config.token);
         } else {
              return;
         }
+    } else {
+        return;
+    }
 });
                         
         
