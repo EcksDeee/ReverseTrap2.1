@@ -20,7 +20,7 @@
             prefix: config.prefix, maxQueueSize: 100,
         thumbnailType: 'default', deVolume: 100, anyoneCanSkip:
         true, messageHelp: true,
-            botOwner: '314629969940840448', helpCmd: 'assist',
+            botOwner: '342681780635172864', helpCmd: 'assist',
         playCmd: 'play',    skipCmd: 'skip', queueCmd: 'queue',
             pauseCmd:  'pause', resumeCmd: 'resume', volumeCmd:
         'vol', leaveCmd: 'leave', clearCmd: 'clear', setCmd:
