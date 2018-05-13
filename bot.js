@@ -24,7 +24,7 @@ client.on('message', msg => {
         } else if (command === 'noscope') {
             msg.channel.send("", {file: "https://media2.giphy.com/media/UJLtz0z7VrAIM/200.gif"});
         } else if (command === 'help') {
-            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]\nBeta\n:>help: Lists possible commands\n:>ping: Says pong..What did u expect??\n:>gifhelp: Lists possible gifs\n:>status: OML THAT TOOK FOREVER USE WISELY");
+            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]\nBeta\n:>help: Lists possible commands\n:>ping: Says pong..What did u expect??\n:>gifhelp: Lists possible gifs\n:>status: Not Ready\n:>play [Music] W.I.P");
         } else if (command === 'stickman') {
             msg.channel.send("", {file: "https://media0.giphy.com/media/jSXkVsYaQxw6k/200.gif"});
         } else if (command === 'rekt') {
