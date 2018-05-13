@@ -3,6 +3,8 @@ const config = require("./config.json");
 
 const client = new Discord.Client();
 
+var botstatus = true;
+
 require('events').EventEmitter.defaultMaxListeners = Infinity;
 
 client.on('ready', () => { 
