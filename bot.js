@@ -19,7 +19,7 @@ client.on('message', msg => {
     
     if (pref === config.prefix) {
 
-        if (command === 'ping') {
+        if (command === 'ping' && botstatus) {
             msg.channel.send("Pong!");
         } else if (command === 'noscope') {
             msg.channel.send("", {file: "https://media2.giphy.com/media/UJLtz0z7VrAIM/200.gif"});
@@ -37,9 +37,9 @@ client.on('message', msg => {
 	}
         
     if (pref === config.prefix) {
-	 if (command === 'enable') {
-		if (botstatus === false) {
-			botstatus = true;
+		if (command === 'enable') {
+			if (botstatus === false) {
+				botstatus = true;
 				msg.channel.send(':white_check_mark: ReverseTrap is now **ENABLED**');
 			} else if (botstatus === true) {
 				msg.channel.send(':white_check_mark: ReverseTrap is already **ENABLED**');
