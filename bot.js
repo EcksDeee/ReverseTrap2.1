@@ -32,7 +32,7 @@ client.on('message', msg => {
         } else if (command === 'noscope') {
             msg.channel.send("", {file: "https://media2.giphy.com/media/UJLtz0z7VrAIM/200.gif"});
         } else if (command === 'help') {
-            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]\nBeta\n:>help: Lists possible commands\n:>ping: Says pong..What did u expect??\n:>gifhelp: Lists possible gifs\n:>status: Not Ready\n:>musicCMDS: Lists ALL Music Commands");
+            msg.channel.send("ReverseTrap [Owner: F1R3SHAD0W]\nBeta\n:>help: Lists possible commands\n:>ping: Says pong..What did u expect??\n:>gifhelp: Lists possible gifs\n:>status: Not Ready\n:>musiccmds: Lists ALL Music Commands");
         } else if (command === 'stickman') {
             msg.channel.send("", {file: "https://media0.giphy.com/media/jSXkVsYaQxw6k/200.gif"});
         } else if (command === 'rekt') {
@@ -41,7 +41,7 @@ client.on('message', msg => {
             msg.channel.send("", {file: "https://i.gifer.com/U3Wn.gif"});
         } else if (command === 'gifhelp') {
             msg.channel.send(":>noscope: Noscopes kids\n:>stickman: Stick people beat each other up\n:>rekt: Use ONLY when someone gets toasted\n:>ganked: Partying gets you beat up");
-	} else if (command === 'musicCMDS') {
+	} else if (command === 'musiccmds') {
 	    msg.channel.send(":>play [song]: Plays Song\n:>skip: Skips Song Playing\n:>queue: Shows song queue\n:>pause: Pauses Song\n:>resume: Resumes Song\n:>vol [Number 1-100]: Sets Bot Volume\n:>leave: Causes Bot to Leave Channel\n:>clear: Clears Queue\n:>loop: Loops song/queue\n:>search [text]: Searches Text and Pulls Up Video Options");                
 		}
 	}
