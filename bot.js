@@ -36,12 +36,17 @@ client.on('message', msg => {
 		}
 	}
 	
-        const music = new Music(client, {
+const music = new Music(client, {
     youtubeKey: process.env.ytapikey, //Youtube Dev API3 Key
     prefix: config.prefix, maxQueueSize: 100, thumbnailType: 'default', defVolume: 100, anyoneCanSkip: true, messageHelp: true,
     botOwner: '342681780635172864', helpCmd: 'assist', playCmd: 'play',    skipCmd: 'skip', queueCmd: 'queue',
     pauseCmd: 'pause', resumeCmd: 'resume', volumeCmd: 'vol', leaveCmd: 'leave', clearCmd: 'clear', setCmd: 'set',
     loopCmd: 'loop', searchCmd: 'search', ownerCmd: 'owner', enableQueueStat: true});
+	
+ client.on('ready', () => {
+   console.log(`Logged in as ${client.user.tag}!`);
+   client.user.setActivity(config.defaultActivity);
+ });
 	
     if (pref === config.prefix) {
 		if (command === 'enable') {
