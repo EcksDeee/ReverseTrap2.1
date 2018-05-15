@@ -43,11 +43,6 @@ const music = new Music(client, {
     pauseCmd: 'pause', resumeCmd: 'resume', volumeCmd: 'vol', leaveCmd: 'leave', clearCmd: 'clear', setCmd: 'set',
     loopCmd: 'loop', searchCmd: 'search', ownerCmd: 'owner', enableQueueStat: true});
 	
- client.on('ready', () => {
-   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity(config.defaultActivity);
- });
-	
     if (pref === config.prefix) {
 		if (command === 'enable') {
 			if (botstatus === false) {
