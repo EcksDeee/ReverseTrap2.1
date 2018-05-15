@@ -42,7 +42,7 @@ client.on('message', msg => {
         } else if (command === 'gifhelp') {
             msg.channel.send(":>noscope: Noscopes kids\n:>stickman: Stick people beat each other up\n:>rekt: Use ONLY when someone gets toasted\n:>ganked: Partying gets you beat up");
 	} else if (command === 'musiccmds') {
-	    msg.channel.send(":>play [song]: Plays Song\n:>skip: Skips Song Playing\n:>queue: Shows song queue\n:>pause: Pauses Song\n:>resume: Resumes Song\n:>vol [Number 1-100]: Sets Bot Volume\n:>leave: Causes Bot to Leave Channel\n:>clear: Clears Queue\n:>loop: Loops song/queue\n:>search [text]: Searches Text and Pulls Up Video Options");                
+	    msg.channel.send("Music Commands!! Enjoy!\n:>play [song]: Plays Song\n:>skip: Skips Song Playing\n:>queue: Shows song queue\n:>pause: Pauses Song\n:>resume: Resumes Song\n:>vol [Number 1-100]: Sets Bot Volume\n:>leave: Causes Bot to Leave Channel\n:>clear: Clears Queue\n:>loop: Loops song/queue\n:>search [text]: Searches Text and Pulls Up Video Options");                
 		}
 	}
 	
